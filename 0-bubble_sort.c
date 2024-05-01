@@ -36,15 +36,3 @@ void bubble_sort(int *array, size_t size)
 		}
 	}
 }
-int main()
-{
-	int array[] = {17, 13, 15, 12, 11};
-
-	int n = sizeof(array)/sizeof(array[0]);
-
-	bubble_sort(array, n);
-
-	printf("\n");
-
-	return (0);
-}
