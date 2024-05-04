@@ -37,8 +37,3 @@ void bubble_sort(int *array, size_t size)
 		}
 	}
 }
-int main(void)
-{
-	bubble_sort(NULL, 0);
-	return (0);
-}
