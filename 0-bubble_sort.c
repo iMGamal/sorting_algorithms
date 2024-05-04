@@ -5,8 +5,8 @@
 /**
  * bubble_sort - Entry point
  * Description: function that sorts arrays
- * array: first argument of type int
- * size: second argument of type unsigned int
+ * @array: first argument of type int
+ * @size: second argument of type unsigned int
  * Return: Always 0 (Success)
  */
 void bubble_sort(int *array, size_t size)
