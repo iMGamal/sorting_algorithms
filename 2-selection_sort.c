@@ -19,7 +19,7 @@ void selection_sort(int *array, size_t size)
 		s = i;
 		for (j = i + 1; j < size; j++)
 		{
-			if (array[i] > array[j])
+			if (array[j] < array[s])
 			{
 				s = j;
 			}
@@ -30,6 +30,18 @@ void selection_sort(int *array, size_t size)
 			array[i] = array[s];
 			array[s] = x;
 		}
+		print_array(array, size);
 	}
-	print_array(array, size);
+}
+int main(void)
+{
+	int array[] = {19, 48, 99, 71, 13, 52, 96, 73, 86, 7};
+
+	size_t n = sizeof(array) / sizeof(array[0]);
+	print_array(array, n);
+	printf("\n");
+	selection_sort(array, n);
+	printf("\n");
+	print_array(array, n);
+	return (0);
 }
